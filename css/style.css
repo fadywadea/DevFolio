@@ -1,3 +1,63 @@
 * {
   scroll-behavior: smooth;
 }
+
+.navbar-home {
+  background: rgba(0, 0, 0, 0.3);
+
+}
+
+.navbar-ul a {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 184px;
+  padding: 20px 0;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: white;
+}
+
+
+
+
+
+.navigation .logo {
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 1px;
+  line-height: 33.6px;
+  color: white;
+}
+
+#header {
+  background-image: url(../img/1.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: white;
+}
+
+.bg-header {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+}
+
+.caption-home {
+  display: flex;
+  align-items: center; 
+  justify-content: center
+}
