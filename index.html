@@ -23,22 +23,20 @@
         <ul class="navbar-nav ms-auto navbar-ul">
 
           <li class="nav-item">
-            <a class="nav-link active text-uppercase" aria-current="page" href="#">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link text-uppercase" href="#">About</a>
+            <a class="nav-link active text-uppercase" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-uppercase" href="#">Service</a>
+            <a class="nav-link text-uppercase" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-uppercase" href="#">work</a>
+            <a class="nav-link text-uppercase" href="#service">Service</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-uppercase" href="#">blog</a>
+            <a class="nav-link text-uppercase" href="#work">work</a>
           </li>
-
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="#blog">blog</a>
+          </li>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown"
@@ -48,9 +46,8 @@
 
               <li class="nav-item dropend text-center">
                 <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropend"
-                  aria-expanded="false">
-                  deep drop down </a>
-                <ul class="dropdown-menu">
+                  aria-expanded="false">deep drop down</a>
+                <ul class="dropdown-menu drop-list">
                   <li><a class="dropdown-item" href="#">drop down 1</a></li>
                   <li><a class="dropdown-item" href="#">drop down 2</a></li>
                   <li><a class="dropdown-item" href="#">drop down 3</a></li>
@@ -65,7 +62,9 @@
             </ul>
           </li>
 
-          <a class="nav-link text-uppercase" href="#">contact</a>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="#contact">contact</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -73,9 +72,9 @@
   <!--END NAVBAR-->
 
   <!--START HEADER SECTION-->
-  <header id="header">
+  <header id="home">
     <div class="bg-header w-100 d-flex justify-content-center align-items-center">
-      <div class="caption-home position-relative z-3">
+      <div class="caption-home">
         <h1>I am Morgan Freeman</h1>
         <p>Designer |</p>
       </div>
@@ -99,15 +98,15 @@
                   </div>
                   <div class="col-sm-6 col-md-7">
                     <div class="about-info">
-                      <p><span class="title-s">Name: </span> <span>Morgan Freeman</span></p>
-                      <p><span class="title-s">Profile: </span> <span>full stack developer</span></p>
-                      <p><span class="title-s">Email: </span> <span>contact@example.com</span></p>
-                      <p><span class="title-s">Phone: </span> <span>(617) 557-0089</span></p>
+                      <p><span class="title-s fw-medium">Name: </span> <span>Morgan Freeman</span></p>
+                      <p><span class="title-s fw-medium">Profile: </span> <span>full stack developer</span></p>
+                      <p><span class="title-s fw-medium">Email: </span> <span>contact@example.com</span></p>
+                      <p><span class="title-s fw-medium">Phone: </span> <span>(617) 557-0089</span></p>
                     </div>
                   </div>
                 </div>
                 <div class="skill-mf">
-                  <p class="title-s">Skill</p>
+                  <p class="title-s fw-medium">Skill</p>
                   <span>HTML</span> <span class="pull-right">85%</span>
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
@@ -133,7 +132,7 @@
               <div class="col-md-6">
                 <div class="about-me pt-4 pt-md-0">
                   <div class="title-box-2">
-                    <h5 class="title-left">
+                    <h5 class="title-left fs-2">
                       About me
                     </h5>
                   </div>

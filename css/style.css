@@ -7,10 +7,14 @@
 
 }
 
-.navbar-ul a {
+.nav-item a {
   color: white;
   font-weight: 500;
   font-size: 16px;
+}
+
+.nav-item .drop-list a {
+  color: black;
 }
 
 .navigation {
@@ -38,7 +42,7 @@
   color: white;
 }
 
-#header {
+#home {
   background-image: url(../img/1.jpg);
   height: 100vh;
   background-position: center;
@@ -58,8 +62,16 @@
 
 .caption-home {
   color: white;
+  
 }
 
+.caption-home h1 {
+  font-size: 72px;
+  margin: 0px 0px 24px;
+  padding: 0px;
+  font-weight: 600;
+  line-height: 86.4px;
+}
 
 .sect-about {
   padding-top: 4rem;
@@ -75,4 +87,24 @@
   margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.about-mf .box-shadow-full {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.skill-mf .progress {
+  background-color: #cde1f8;
+  margin: 0.5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: 0.7rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
 }
