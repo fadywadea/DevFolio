@@ -7,6 +7,13 @@ body {
   color: #4e4e4e;
 }
 
+ 
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
 .navbar-home {
   background: rgba(0, 0, 0, 0.3);
 
@@ -34,10 +41,6 @@ body {
 .nav-link:hover {
   color: white;
 }
-
-
-
-
 
 .navigation .logo {
   font-weight: 600;
@@ -84,7 +87,6 @@ body {
 
 }
 
-
 .box-shadow-full {
   padding: 3rem 3rem;
   position: relative;
@@ -120,9 +122,9 @@ body {
 }
 
 .title-left {
+  color: #1e1e1e;
   font-size: 2rem;
   position: relative;
-  color: #1e1e1e;
 }
 
 .title-left:before {
@@ -136,4 +138,40 @@ body {
 
 .title-box-2 {
   margin-bottom: 3rem;
+}
+
+.title-a {
+  color: #1e1e1e;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.subtitle-a {
+  text-decoration: none;
+  color: #4e4e4e;
+}
+
+.title-box {
+  margin-bottom: 4rem;
+}
+
+.line-mf {
+  width: 40px;
+  height: 5px;
+  background-color: #0078ff;
+  margin: 0 auto;
+}
+
+.service-box {
+  background-color: #fff;
+  padding: 2.5rem 1.3rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.box-shadow, .card-blog, .work-box, .service-box, .paralax-mf {
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
