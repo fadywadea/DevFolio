@@ -2,6 +2,11 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #f5f5f5;
+  color: #4e4e4e;
+}
+
 .navbar-home {
   background: rgba(0, 0, 0, 0.3);
 
@@ -81,7 +86,7 @@
 
 
 .box-shadow-full {
-  padding: 3rem 1.25rem;
+  padding: 3rem 3rem;
   position: relative;
   background-color: #fff;
   margin-bottom: 3rem;
@@ -107,4 +112,28 @@
 
 .about-mf .about-img img {
   margin-left: 10px;
+}
+
+.skill-mf span {
+  color: #4e4e4e;
+  font-weight: 400;
+}
+
+.title-left {
+  font-size: 2rem;
+  position: relative;
+  color: #1e1e1e;
+}
+
+.title-left:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #0078ff;
+  width: 100px;
+  bottom: -12px;
+}
+
+.title-box-2 {
+  margin-bottom: 3rem;
 }
