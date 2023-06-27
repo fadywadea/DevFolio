@@ -1,3 +1,17 @@
+:root {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  --bs-border-width: 1px;
+  --bs-border-radius: 0.375rem;
+  --bs-border-radius-sm: 0.25rem;
+  --bs-border-radius-lg: 0.5rem;
+  --bs-border-radius-xl: 1rem;
+  --bs-border-radius-xxl: 2rem;
+  --bs-border-radius-2xl: var(--bs-border-radius-xxl);
+  --bs-border-radius-pill: 50rem;
+  --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -25,6 +39,24 @@ p {
 
 .nav-item .drop-list a {
   color: black;
+}
+
+.navigation>ul>li>a {
+  position: relative;
+}
+
+
+.navigation>ul>li>a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .navigation {
@@ -64,7 +96,6 @@ p {
 
 .caption-home {
   color: white;
-
 }
 
 .caption-home h1 {
@@ -73,6 +104,212 @@ p {
   padding: 0px;
   font-weight: 600;
   line-height: 86.4px;
+}
+
+.caption-home p {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.caption-home p::after {
+  content: "|";
+  animation-name: typing;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+  2% {
+    content: "D |";
+  }
+
+  4% {
+    content: "De |";
+  }
+
+  6% {
+    content: "Dev |";
+  }
+
+  8% {
+    content: "Deve |";
+  }
+
+  10% {
+    content: "Devel |";
+  }
+
+  12% {
+    content: "Develo |";
+  }
+
+  14% {
+    content: "Develop |";
+  }
+
+  16% {
+    content: "Develope |";
+  }
+
+  18% {
+    content: "Developer |";
+  }
+
+  20% {
+    content: "Develope |";
+  }
+
+  22% {
+    content: "Develop |";
+  }
+
+  24% {
+    content: "Develo |";
+  }
+
+  26% {
+    content: "Devel |";
+  }
+
+  28% {
+    content: "Deve |";
+  }
+
+  30% {
+    content: "Dev |";
+  }
+
+  32% {
+    content: "De |";
+  }
+
+  34% {
+    content: "Des |";
+  }
+
+  36% {
+    content: "Desi |";
+  }
+
+  38% {
+    content: "Desig |";
+  }
+
+  40% {
+    content: "Design |";
+  }
+
+  42% {
+    content: "Designe |";
+  }
+
+  44% {
+    content: "Designer |";
+  }
+
+  46% {
+    content: "Designe |";
+  }
+
+  48% {
+    content: "Design |";
+  }
+
+  50% {
+    content: "Desig |";
+  }
+
+  52% {
+    content: "Desi |";
+  }
+
+  54% {
+    content: "Des |";
+  }
+
+  56% {
+    content: "De |";
+  }
+
+  58% {
+    content: "D |";
+  }
+
+  60% {
+    content: "F |";
+  }
+
+  62% {
+    content: "Fr |";
+  }
+
+  64% {
+    content: "Fre |";
+  }
+
+  66% {
+    content: "Free |";
+  }
+
+  68% {
+    content: "Freel |";
+  }
+
+  70% {
+    content: "Freela |";
+  }
+
+  72% {
+    content: "Freelan |";
+  }
+
+  74% {
+    content: "Freelanc |";
+  }
+
+  76% {
+    content: "Freelance |";
+  }
+
+  78% {
+    content: "Freelancer |";
+  }
+
+  80% {
+    content: "Freelance |";
+  }
+
+  82% {
+    content: "Freelanc |";
+  }
+
+  84% {
+    content: "Freelan |";
+  }
+
+  86% {
+    content: "Freela |";
+  }
+
+  88% {
+    content: "Freel |";
+  }
+
+  90% {
+    content: "Free |";
+  }
+
+  92% {
+    content: "Fre |";
+  }
+
+  94% {
+    content: "Fr |";
+  }
+
+  96% {
+    content: "F |";
+  }
 }
 
 .sect-about {
@@ -181,8 +418,7 @@ p {
 }
 
 .row {
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
+
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
@@ -416,4 +652,22 @@ img {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+}
+
+.card-img,
+.card-img-bottom {
+  border-bottom-right-radius: var(--bs-card-inner-border-radius);
+  border-bottom-left-radius: var(--bs-card-inner-border-radius);
+}
+
+.card-img,
+.card-img-top {
+  border-top-left-radius: var(--bs-card-inner-border-radius);
+  border-top-right-radius: var(--bs-card-inner-border-radius);
+}
+
+.card-img,
+.card-img-bottom,
+.card-img-top {
+  width: 100%;
 }
