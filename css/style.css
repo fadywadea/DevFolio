@@ -285,8 +285,11 @@ p {
   padding-top: 4rem;
 }
 
- 
-.box-shadow, .card-blog, .work-box, .service-box, .paralax-mf {
+.box-shadow,
+.card-blog,
+.work-box,
+.service-box,
+.paralax-mf {
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 
