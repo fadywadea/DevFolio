@@ -9,12 +9,14 @@
   --bs-border-radius-xxl: 2rem;
   --bs-border-radius-2xl: var(--bs-border-radius-xxl);
   --bs-border-radius-pill: 50rem;
-  --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+  --bs-card-inner-border-radius: calc(
+    var(--bs-border-radius) - (var(--bs-border-width))
+  );
 }
 
-* {
+/* * {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   background-color: #f5f5f5;
@@ -26,9 +28,12 @@ p {
   margin-bottom: 1rem;
 }
 
-.navbar-home {
-  background: rgba(0, 0, 0, 0.8);
+.navbar {
+  transition: background-color 2s;
+}
 
+.navbar-home {
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .nav-item a {
@@ -41,12 +46,11 @@ p {
   color: black;
 }
 
-.navigation>ul>li>a {
+.navigation > ul > li > a {
   position: relative;
 }
 
-
-.navigation>ul>li>a:before {
+.navigation > ul > li > a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -81,7 +85,6 @@ p {
   height: 100vh;
   background-position: center;
   background-size: cover;
-
 }
 
 .navbar-nav .nav-link.active,
@@ -315,7 +318,6 @@ p {
 .sect-about {
   padding-top: 4rem;
   background-color: #f5f5f5;
-
 }
 
 .box-shadow-full {
@@ -418,14 +420,12 @@ p {
 }
 
 .row {
-
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-.5 * var(--bs-gutter-x));
-  margin-left: calc(-.5 * var(--bs-gutter-x));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
-
 
 .service-box .ico-circle {
   transition: all 500ms ease;
@@ -433,7 +433,6 @@ p {
   align-items: center;
   justify-content: center;
 }
-
 
 .ico-circle {
   height: 100px;
